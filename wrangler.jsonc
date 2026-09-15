@@ -4,7 +4,15 @@
 	"main": "./worker.ts",
 	"compatibility_date": "2026-05-20",
 	"keep_vars": true,
-	"vars": {},
+	"vars": {
+		"APP_URL": "https://inbox.amaniworld.com",
+	},
+	"routes": [
+		{
+			"pattern": "inbox.amaniworld.com",
+			"custom_domain": true,
+		},
+	],
 	"compatibility_flags": [
 		"nodejs_compat",
 		"global_fetch_strictly_public"
